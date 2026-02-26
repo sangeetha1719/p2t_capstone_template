@@ -47,7 +47,9 @@ node install.js
 
 **This script will create a file located in `./capstone-backend/.env` you will still need to configure your MongoDB access credentials in this file**
 
-2. You will have to install your node packages from `package.json` to `node_modules`
+2. Locate the `./capstone-backend/.env` file and edit the environment vari
+
+3. You will have to install your node packages from `package.json` to `node_modules`
 
 To accomplish this, open this project in Visual Studio Code, and open a new terminal session
 
@@ -56,7 +58,7 @@ Run the command
 npm install
 ```
 
-3. To run the code you have two options, to run it with Visual Studio Code's GUI or to open a terminal and run the following command
+4. To run the code you have two options, to run it with Visual Studio Code's GUI or to open a terminal and run the following command
 
 ```sh
 npm start

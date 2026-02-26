@@ -9,7 +9,10 @@ async function createFile(filename, data) {
     console.error('Error creating file:', error);
   }
 }
+async function main() {
+    // Create .env file for backend with placeholder content
+    await createFile('./capstone-backend/.env', `DB_URL="YOUR_MONGO_DB_URL_HERE"`);
+    console.log('Installation complete. Please update the capstone-backend/.env file with your MongoDB URL. In the file, replace "YOUR_MONGO_DB_URL_HERE" with your actual MongoDB connection string.');
+}
 
-// Create .env file for backend with placeholder content
-createFile('./capstone-backend/.env', `DB_URL="YOUR_MONGO_DB_URL_HERE"`);
-console.log('Installation complete. Please update the capstone-backend/.env file with your MongoDB URL. In the file, replace "YOUR_MONGO_DB_URL_HERE" with your actual MongoDB connection string.');
+main();
