@@ -1,7 +1,11 @@
+// Vite configuration file
+// Configures build tool settings for React and Tailwind CSS
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  // Enable React and Tailwind CSS plugins
+  plugins: [react(), tailwindcss()],
 })
